@@ -17,7 +17,7 @@ const styles: CSSProperties = {
 
 export const MyAwesomeApp = () => {
   return (
-    <>
+    <div data-testid="my-awesome-app">
       <h1 style={styles}> {name} </h1>
       <h3> {lastName} </h3>
       <ul>
@@ -25,6 +25,6 @@ export const MyAwesomeApp = () => {
           <li key={game}>{game}</li>
         ))}
       </ul>
-    </>
+    </div>
   );
 };

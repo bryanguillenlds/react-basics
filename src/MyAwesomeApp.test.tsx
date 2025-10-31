@@ -16,4 +16,15 @@ describe('MyAwesomeApp', () => {
     const h1 = screen.getByRole('heading', { level: 1 });
     expect(h1.innerHTML).toContain('Bryan');
   });
+
+  it('should match the snapshot with render', () => {
+    const { container } = render(<MyAwesomeApp />);
+    expect(container).toMatchSnapshot();
+  });
+
+  it('should match the snapshot using screen', () => {
+    // dependant on you having data test ids in the dom
+    render(<MyAwesomeApp />);
+    expect(screen.getByTestId('my-awesome-app')).toMatchSnapshot();
+  });
 });

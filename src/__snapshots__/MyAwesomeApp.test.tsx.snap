@@ -1,0 +1,109 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`MyAwesomeApp > should match the snapshot 1`] = `
+<div>
+  <h1
+    style="color: red;"
+  >
+     
+    Bryan
+     
+  </h1>
+  <h3>
+     
+    Guillen
+     
+  </h3>
+  <ul>
+    <li>
+      The Witcher 3
+    </li>
+    <li>
+      Elden Ring
+    </li>
+    <li>
+      The Last of Us
+    </li>
+    <li>
+      The Last of Us 2
+    </li>
+    <li>
+      The Last of Us 3
+    </li>
+  </ul>
+</div>
+`;
+
+exports[`MyAwesomeApp > should match the snapshot using screen 1`] = `
+<div
+  data-testid="my-awesome-app"
+>
+  <h1
+    style="color: red;"
+  >
+     
+    Bryan
+     
+  </h1>
+  <h3>
+     
+    Guillen
+     
+  </h3>
+  <ul>
+    <li>
+      The Witcher 3
+    </li>
+    <li>
+      Elden Ring
+    </li>
+    <li>
+      The Last of Us
+    </li>
+    <li>
+      The Last of Us 2
+    </li>
+    <li>
+      The Last of Us 3
+    </li>
+  </ul>
+</div>
+`;
+
+exports[`MyAwesomeApp > should match the snapshot with render 1`] = `
+<div>
+  <div
+    data-testid="my-awesome-app"
+  >
+    <h1
+      style="color: red;"
+    >
+       
+      Bryan
+       
+    </h1>
+    <h3>
+       
+      Guillen
+       
+    </h3>
+    <ul>
+      <li>
+        The Witcher 3
+      </li>
+      <li>
+        Elden Ring
+      </li>
+      <li>
+        The Last of Us
+      </li>
+      <li>
+        The Last of Us 2
+      </li>
+      <li>
+        The Last of Us 3
+      </li>
+    </ul>
+  </div>
+</div>
+`;
