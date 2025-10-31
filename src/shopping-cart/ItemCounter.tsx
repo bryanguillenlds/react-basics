@@ -25,9 +25,9 @@ export const ItemCounter = ({ productName, quantity = 1 }: Props) => {
       >
         {productName}
       </span>
-      <button onClick={handleDecrement}> -1 </button>
+      <button onClick={handleDecrement}>-1</button>
       <span> {count} </span>
-      <button onClick={handleIncrement}> +1 </button>
+      <button onClick={handleIncrement}>+1</button>
     </section>
   );
 };
