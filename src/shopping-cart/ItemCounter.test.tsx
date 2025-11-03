@@ -51,4 +51,24 @@ describe('ItemCounter', () => {
 
     expect(screen.getByText('0')).toBeDefined();
   });
+
+  it('should show red text when count is 0', () => {
+    const productName = 'Nintendo';
+    render(<ItemCounter productName={productName} />);
+
+    const decrementButton = screen.getByRole('button', { name: '-1' });
+    fireEvent.click(decrementButton);
+
+    expect(screen.getByText(productName).style.color).toBe('red');
+  });
+
+  it('should show black text when count is greater than 0', () => {
+    const productName = 'Nintendo';
+    render(<ItemCounter productName={productName} />);
+
+    const incrementButton = screen.getByRole('button', { name: '+1' });
+    fireEvent.click(incrementButton);
+
+    expect(screen.getByText(productName).style.color).toBe('black');
+  });
 });
